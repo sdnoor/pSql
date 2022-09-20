@@ -1,6 +1,7 @@
 param location string
 param locationName string
 param projectName string
+param keyVaultGroupName string
 
 @secure()
 param adminLogin string
