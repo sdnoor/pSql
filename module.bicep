@@ -21,7 +21,7 @@ module sql 'main.bicep' = {
     environmentType: environmentType
     locationName: locationName
     projectName: projectName
-    keyVaultGroupName: keyVaultRGName
+    keyVaultRGName: keyVaultRGName
   }
 }
 
