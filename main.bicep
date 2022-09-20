@@ -15,7 +15,7 @@ param adminPassword string
 ])
 param environmentType string
 
-var sqlServerName = 'sqlserver-${projectName}-${locationName}-${environmentType}'
+var sqlServerName = 'sqlnoor-${projectName}-${locationName}-${environmentType}'
 var sqlDbName = 'db-${projectName}{-${locationName}-${environmentType}'
 
 resource sqlServer 'Microsoft.Sql/servers@2021-08-01-preview' ={
