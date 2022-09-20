@@ -18,7 +18,7 @@ param environmentType string
 var sqlServerName = 'sqlserver-${projectName}-${locationName}-${environmentType}'
 var sqlDbName = 'db-${projectName}{-${locationName}-${environmentType}'
 
-resource sqlServer 'Microsoft.Sql/servers@2014-04-01' ={
+resource sqlServer 'Microsoft.Sql/servers@2021-08-01-preview' ={
   name: sqlServerName
   location: location
   properties: {
@@ -27,7 +27,7 @@ resource sqlServer 'Microsoft.Sql/servers@2014-04-01' ={
   }
 }
 
-resource sqlServerDatabase 'Microsoft.Sql/servers/databases@2014-04-01' = {
+resource sqlServerDatabase 'Microsoft.Sql/servers/databases@2021-08-01-preview' = {
   parent: sqlServer
   name: sqlDbName
   location: location
