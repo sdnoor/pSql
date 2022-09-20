@@ -1,6 +1,7 @@
 param location string
 param locationName string
 param projectName string
+param keyVaultRGName string
 
 @allowed([
   'prod'
@@ -25,5 +26,5 @@ module sql 'main.bicep' = {
 
 resource keyVault 'Microsoft.KeyVault/vaults@2019-09-01' existing = {
   name: 'kvsql40'
-  scope: resourceGroup('rg-weu-prod')
+  scope: resourceGroup(keyVaultRGName)
 }

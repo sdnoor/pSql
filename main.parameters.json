@@ -13,6 +13,9 @@
     },
     "adminLogin": {
       "value": "logitech"
+    },
+    "keyVaultGroupName": {
+      "value": "rg-weu-prod"
     }
   }
 }
